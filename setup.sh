@@ -2,6 +2,7 @@ chmod +x change-wallpaper
 if [[ ! -d $HOME/bin ]]; then
 	mkdir $HOME/bin
 fi
+export PATH=$PATH:$HOME/bin
 echo "export PATH=\$PATH:\$HOME/bin >> $HOME/.bashrc
 cp change-wallpaper $HOME/bin
 change-wallpaper resources/forest.jpg
